@@ -1,5 +1,5 @@
 ---
-title: 'STA102 : TP_regression_multiple'
+title: 'STA102 : STA102_regression_multiple'
 author: "Benjamin DAURIF"
 date: "2025-12-26"
 output: pdf_document
@@ -82,5 +82,6 @@ shapiro.test(temp$model$residuals)
 ```
 
 ```{r }
+
 
 ```
