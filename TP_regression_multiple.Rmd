@@ -1,0 +1,86 @@
+---
+title: 'STA102 : TP_regression_multiple'
+author: "Benjamin DAURIF"
+date: "2025-12-26"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r Import}
+ozone <- read.csv2(
+  "D:/Etudes/2025_2026/STA102/3.Regression multiple/TP_regression_multiple/ozone.csv"
+)
+```
+
+
+```{r }
+modele=lm(maxO3~T9+T12+T15+Ne9+Ne12+Ne15+Vx9+Vx12+Vx15+maxO3v,data=ozone)
+```
+
+
+```{r }
+summary(modele)
+```
+
+```{r }
+cor(ozone[,1],ozone[,-1])
+barplot(cor(ozone[,1],ozone[,-1]))
+
+library(corrplot)
+corrplot(cor(ozone[,-1]), order = 'hclust', method = 'ellipse', type = 'lower')
+```
+
+```{r }
+round(ols_eigen_cindex(modele), 2)
+```
+
+```{r }
+# Sélection automatique de variables (analyse exhaustive) :
+ols_step_best_subset(modele)
+```
+
+```{r }
+temp = lm(maxO3~T12+Ne9+Vx9+maxO3v, data = ozone)
+anova(temp)
+summary(temp)
+```
+
+```{r }
+# Représentation graphique du processus de sélection : 
+bsr = ols_step_best_subset(modele)
+plot(bsr)
+
+# Pour l'exercice, une autre methode de selection : descendante, pas a pas,
+# basee sur l'AIC :
+# temp = ols_step_backward_aic(modele, details = T,progress = T)
+```
+
+```{r }
+# Etude des IC : 
+confint(temp$model)
+```
+On remarque effectivement qu'aucun des IC des coefficients ne contient 0.
+
+```{r }
+# Etude des residus :
+library(ggfortify)
+
+autoplot(temp$model, which = 1, ncol = 1, label.size = 3, label.hjust = -0.8, label.n = 4)
+
+# Test des hypotheses statistiques du modele :
+# Autocorrelation, Durbin-Watson :
+lmtest::dwtest(formula = temp$model, alternative = 'two.sided')
+# Homoscedasticite, Breush-Pagan :
+bptest(formula = temp$model)
+# Normalite des residus : 
+autoplot(temp$model, which = 2, ncol = 1, label.size = 3, label.hjust = -0.8, label.n = 4)
+shapiro.test(temp$model$residuals)
+```
+
+```{r }
+
+```
