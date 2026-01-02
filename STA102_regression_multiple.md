@@ -544,3 +544,4 @@ Soient $\{Q_{1},...,Q_{k},...,Q_{K} \ |Q_{k}=x^{T}A_{k}x\}$, avec $A_{k}$ une ma
 $$\Sigma_{k=1}^{K}Rang(A_{k})=n \ \Rightarrow \ \forall i \neq j : \left(Q_{j} \sim \chi^{2}_{Rang(A_{j})}\right) \perp \left(Q_{j}\sim \chi^{2}_{Rang(A_{j})}\right)$$
 **Remarque :** 
 $$x \sim \mathcal{N}(0\ ; \ \sigma^{2}I) \ \Rightarrow \ x^{T}x \sim \sigma^{2}\chi^{2}_{n}$$
+
