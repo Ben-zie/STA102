@@ -56,7 +56,7 @@ On cherche `a approximer le nuage des points
 
 $(x_{i}, y_{i})$ par une droite d’´equation $\hat{y} = a+bx$ de telle sorte que
 
-$\Sigma^{n}_{i=1}(y_{i}− \hat{y}_{i})$ soit minimale :
+$\Sigma^{n}_{i=1}(y_{i}−\hat{y}_i)$ soit minimale :
 
 $$e_{i}=y_{i}-\hat{y_{i}}$$
 
@@ -584,5 +584,6 @@ ols_plot_dfbetas(modele)
 ols_plot_dffits(modele)
 ols_plot_resid_lev(modele)
 ```
+
 
 
