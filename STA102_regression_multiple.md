@@ -37,7 +37,9 @@ describe(df)
 ### Création des matrices du modèle :
 
 Le **modèle général** de la régression linéaire peut s'écrire de la façon suivante : 
+
 $$y_{i}=\beta_{0}+\Sigma_{j=1}^{p} \ \beta_{j} \ x_{ij} + \epsilon_{i}$$
+
 ```{r Preparation des matrices}
 # Vecteur Y (variable a expliquer) :
 Y = as.matrix(df[, 1])
@@ -77,7 +79,9 @@ corrplot(cor(X[,-1]))
 Le modèle peut maintenant s'écrire de la façon suivante :
 
 $$\mathcal{y}=X\beta +\epsilon$$
+
 Propriétés :
+
 $$\epsilon \sim \mathcal{N}(0,\sigma^{2}I)$$
 $\Rightarrow \ y \sim \mathcal{N}(X\beta,\sigma^{2}I)$      
 $\Rightarrow \ (y-X\beta) \sim \mathcal{N}(0,\sigma^{2}I)$      
@@ -147,6 +151,7 @@ Epsilon = Y - X %*% B
 - **Sans bias** :
 
 $$b=(X^{T}X)^{-1} \ X^{T} \ Y=(X^{T}X)^{-1} \ X^{T}(X\beta+\epsilon)=(X^{T}X)^{-1} \ X^{T}X\beta+(X^{T}X)^{-1}X^{T}\epsilon=\beta+A\epsilon$$
+
 Avec :
 
 $$E[ \ b \ ]=E[ \ \beta+A\epsilon \ ]=\beta+AE[ \ \epsilon \ ]=\beta$$
@@ -616,6 +621,7 @@ $$\Sigma_{k=1}^{K}Rang(A_{k})=n \ \Rightarrow \ \forall i \neq j : \left(Q_{j} \
 **Remarque :** 
 
 $$x \sim \mathcal{N}(0\ ; \ \sigma^{2}I) \ \Rightarrow \ x^{T}x \sim \sigma^{2}\chi^{2}_{n}$$
+
 
 
 
