@@ -35,7 +35,9 @@ plot(df[2:3])
 Quantification de la force de la relation linéaire entre $X$ et $Y$ :
 
 $$r=\frac{\frac{1}{n}\Sigma^{n}_{i=1}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sqrt{\frac{1}{n}\Sigma^{n}_{i=1}(x_{i}-\bar{x})^{2} \ \frac{1}{n}\Sigma^{n}_{i=1}(y_{i}-\bar{y})^{2}}}$$
+
 $$=\frac{\Sigma^{n}_{i=1}(x_{i}-\bar{x})(y_{i}-\bar{y})}{\sqrt{\Sigma^{n}_{i=1}(x_{i}-\bar{x})^{2} \ \Sigma^{n}_{i=1}(y_{i}-\bar{y})^{2}}}$$
+
 $$=\frac{\Sigma^{n}_{i=1}x_{i}y_{i} \ \  n\bar{x}\bar{y}} {(\sqrt{\Sigma^{n}_{i=1}x_{i}^{2}-n\bar{x}^{2}) \ (\Sigma^{n}_{i=1}y_{i}^{2}-n\bar{y}^{2})}}=\frac{S_{XY}}{S_{X}S_{Y}}$$
 
 Voir théorème de **König-Huygens**.      
@@ -51,7 +53,9 @@ Propriétés :
 ### Principe des moindres carrés
 
 On cherche `a approximer le nuage des points
+
 $(x_{i}, y_{i})$ par une droite d’´equation $\hat{y} = a+bx$ de telle sorte que
+
 $\Sigma^{n}_{i=1}(y_{i}− \hat{y}_{i})$ soit minimale :
 
 $$e_{i}=y_{i}-\hat{y_{i}}$$
@@ -67,9 +71,11 @@ Soit :
 $F(a;b)=(\Sigma^{n}_{i=1}y_{i}-a -by_{i})^{2}$
 
 $$\frac{\partial \ F(a;b)}{\partial \ a}=2\Sigma^{n}_{i=1}(y_{i}-a -bx_{i})=0$$
+
 $$\Rightarrow \ \Sigma^{n}_{i=1}e_{i}=0$$
 
 $$\frac{\partial \ F(a;b)}{\partial \ b}=2\Sigma^{n}_{i=1}x_{i}(y_{i}-a -bx_{i})=0$$
+
 $$\Rightarrow \ \Sigma^{n}_{i=1}x_{i}e_{i}=0$$
 
 Donc : 
@@ -80,15 +86,21 @@ Donc :
 Résolution : 
 
 $$\Sigma^{n}_{i=1}(y_{i}-a -bx_{i})=\Sigma^{n}_{i=1}y_{i} -na -\Sigma^{n}_{i=1}bx_{i}=0$$
+
 $$\Rightarrow \ \frac{\Sigma^{n}_{i=1}y_{i}}{n} -a -b\frac{\Sigma^{n}_{i=1}x_{i}}{n}= \bar{y}-a-b\bar{x}= 0$$
+
 $$\Rightarrow \ a=\bar{y}-b\bar{x}$$
 
 et :
 
 $$\Sigma^{n}_{i=1}x_{i}(y_{i}-a -bx_{i})=\Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y}+b\bar{x} -bx_{i})=\Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y})+b\bar{x}\Sigma^{n}_{i=1}x_{i}-b\Sigma^{n}_{i=1}x_{i}^{2}= 0$$
+
 $$\Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y})+bn\bar{x}^{2}-b\Sigma^{n}_{i=1}x_{i}^{2}= 0$$
+
 $$bn\bar{x}^{2}-b\Sigma^{n}_{i=1}x_{i}^{2}= \Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y})$$
+
 $$b(\Sigma^{n}_{i=1}x_{i}^{2}-n\bar{x}^{2})= \Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y})$$
+
 $$b= \frac{\Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y})}{\Sigma^{n}_{i=1}x_{i}^{2}-n\bar{x}^{2}}$$
 
 Avec :
@@ -135,6 +147,7 @@ b= \frac{\sum_{i=1}^n x_i(y_i-\bar y)}
 = \frac{\sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)}
        {\sum_{i=1}^n (x_i-\bar x)^2}
 $$
+
 On fais le lien avec le coefficient de corrélation : 
 
 $$
@@ -143,7 +156,6 @@ s_{XY} = r \, s_X s_Y \ \Longrightarrow \
 \frac{s_{XY}}{s_X^2} = \frac{r \, s_X s_Y}{s_X^2} \ \Longrightarrow \ 
 \frac{s_{XY}}{s_X^2} = r \, \frac{s_Y}{s_X}
 $$
-
 
 $$\Rightarrow \ b=\frac{\Sigma^{n}_{i=1}x_{i}y_{i} \ \  n\bar{x}\bar{y}} {\sum_{i=1}^n x_{i}^{2}-n\bar x^{2}}=\frac{S_{XY}}{S_{X}^{2}}$$
 
@@ -217,6 +229,7 @@ SCR=\sum^{n}_{i=1}(y_{i}-\hat{y}_{i})^{2}$$
 $$
 R^{2}=\frac{SCE}{SCT}=\frac{\sum^{n}_{i=1}(\hat{y}_{i}-\bar{y}_{i})^{2}}{\sum^{n}_{i=1}(y_{i}-\hat{y}_{i})^{2}}
 $$
+
 Propriétés : 
 
 - $R^{2}\in [\ 0 \ ; \ 1\ ]$
@@ -231,6 +244,7 @@ Soit l'**écart résiduel** : $e_{i}=y_{i}-\hat{y}_{i}=y_{i}-[\bar{y}-b(x_{i}-\b
 $$
 \sum_{i=1}^{n}e_{i}=\sum_{i=1}^{n}(y_{i}-\hat{y}_{i})=\sum_{i=1}^{n}y_{i}-n\bar{y}-b\sum_{i=1}^{n}(x_{i}-\bar{x})=n\bar{y} - n\bar{y}=0
 $$
+
 Propriétés : 
 
 - $E[e_{i}]=0$       
@@ -276,11 +290,11 @@ Pour être moins restrictifs, on travail avec $E[\ Y|X\ ]$ afin de savoir si $Y$
 On déduit de ces observations le **rapport de corrélation** :
 
 $$\eta^{2}_{Y|X}=\frac{V[E[\ Y|X \ ]]}{V[\ Y|X \ ]}$$
+
 Propriétés : 
 
 - $\eta \in [0 \ ; \ 1]$       
 - $\eta = 0 \ \Rightarrow $ indépendance en moyenne ; $E[\ Y|X \ ]$ est *certainement* constante.
-
 - $\eta = 1 \ \Rightarrow E[V[\ Y|X \ ]]$ et $E[\ Y|X \ ]$ sont *certainement* nulles.         
 - $E[\ Y|X \ ]=\alpha+X\beta$ (ex. $(X \ ; \Y)$ Gaussiens)$ \ \Rightarrow \ \eta^{2}_{Y|X}=\rho^{2}_{Y|X}$
 
@@ -295,6 +309,7 @@ On démontre que $E[ \ (Y − f(X))^{2}]$ est minimale pour $f(X)=E[ \ Y |X \ ]$
 Soit la **fonction de régression** $f$ : 
 
 $$f : X \rightarrow E[ \ Y |X=x \ ]$$
+
 Alors : 
 
 $$Y = E[ \ Y |X \ ] + \epsilon$$
@@ -309,14 +324,17 @@ Avec $\epsilon$, le résidu aléatoire tel que :
 #### Régression linéaire : 
 
 $$E[\ Y|X \ ]=\alpha+X\beta \ \ \Longrightarrow \ \ Y= \alpha+X\beta + \epsilon$$
+
 Egalement : 
 
 $$E[\ Y \ ] = E [E(Y |X)] \ \ \Longrightarrow \ \ E[\ Y \ ] = E[\ α + βX \ ] = α + βE[\ X \ ]$$
+
 Donc la droite passe par le point $(\bar{X} \ ; \ \bar{Y})$. 
 
 On a également : 
 
 $$Y − E[ \ Y \ ] = α + βX + ϵ − [ \ α + βE(X \ ]] = β [ \ X − E(X) \ ] + \epsilon$$
+
 $$E[\ (Y-E[\ Y\ ])(X-E[\ X\ ])\ ]=\beta E[\ (X-E[\ X\ ])^{3}\ ]+E[\ \epsilon(X-E[\ X\ ])\ ]$$
 
 Sachant que : 
@@ -331,6 +349,7 @@ $$Cov(X \ ; \ Y)=\beta \ V[\ X\ ] + Cov(\epsilon \ ; \ X)$$
 Alors même que $\epsilon$ n'est pas corrélée à $X$, soit $Cov(\epsilon \ ; \ X)=0$ et donc : 
 
 $$Cov(X \ ; \ Y)=\beta \ V[\ X\ ]$$
+
 $$\beta= \frac{Cov(X \ ; \ Y)}{ V[\ X\ ]}$$
 
 Egalement : $\rho=\frac{Cov(X \ ; \ Y)}{\sigma_{X}\sigma_{Y}} \ \Rightarrow \ Cov(X \ ; \ Y) = \rho \sigma_{X}\sigma_{Y}$
@@ -340,6 +359,7 @@ $$\Rightarrow \ \ \beta=\frac{Cov(X \ ; \ Y)}{\sigma^{2}_{X}}=\frac{\rho \sigma_
 **Rappel :** L'équation de la droite de régression est donnée par :
 
 $$Y-E[\ Y \ ]= \rho \frac{\sigma_{Y}}{\sigma_{X}}\left(X-E[\ X \ ]\right)+\epsilon$$
+
 $$\Rightarrow \ Y= \left(E[\ Y \ ] - \rho \frac{\sigma_{Y}}{\sigma_{X}}E[\ X \ ]\right)+ \rho \frac{\sigma_{Y}}{\sigma_{X}}X + \epsilon$$
 
 Si la régression est linéaire, on retrouve le résultat précédent ($\eta^{2}_{Y|X}=\rho^{2}$) :
@@ -383,9 +403,11 @@ Propriétés de la variable aléatoire $\epsilon$ :
 En partant du modèle :
 
 $$Y_{i}=\alpha + \beta x_{i} +\epsilon_{i}$$
+
 On effectue un développement par la méthode des moindres carrés, comparable à celui déja effectué, afin de calculer les paramètres en tenant compte du caractère aléatoire de $Y$ :
 
 $$B=\frac{\sum^{n}_{i=1} (Y_{i}-\bar{Y})(x_{i}-\bar{x})}{\sum^{n}_{i=1}(x_{i}-\bar{x})^{2}}$$
+
 $$A=\bar{Y}-B\bar{x}$$
 
 #### Propriétés de $A$ et $B$ :
@@ -437,6 +459,7 @@ $$\rho(A \ ; \ B)=\frac{-\bar{x}}{\sqrt{\Sigma^{n}_{i=1}(x_{i}^{2})/n}}$$
 **Rappel :**
 
 - $\epsilon \sim \mathcal{N}(0 \ ; \ \sigma^{2})$
+
 ```{r }
 modele=lm(Prix~Superficie, data = df)
 ```
@@ -473,6 +496,7 @@ ggplot(df, aes(x=Superficie, y=Prix))+
   geom_point()+
   geom_smooth(method=lm, se=T)
 ```
+
 ```{r }
 PI = as.data.frame(cbind(Prix = df$Prix, Superficie = df$Superficie,
 predict(modele,interval="prediction")))
@@ -560,4 +584,5 @@ ols_plot_dfbetas(modele)
 ols_plot_dffits(modele)
 ols_plot_resid_lev(modele)
 ```
+
 
