@@ -82,7 +82,8 @@ $$\mathcal{y}=X\beta +\epsilon$$
 
 Propriétés :
 
-$$\epsilon \sim \mathcal{N}(0,\sigma^{2}I)$$
+$$\epsilon \sim \mathcal{N}(0,\sigma^{2}I)$$      
+
 $\Rightarrow \ y \sim \mathcal{N}(X\beta,\sigma^{2}I)$      
 $\Rightarrow \ (y-X\beta) \sim \mathcal{N}(0,\sigma^{2}I)$      
 $\Rightarrow \ b \sim \mathcal{N}(\beta,\sigma^{2}(X^{T}X)^{-1})$      
@@ -621,6 +622,7 @@ $$\Sigma_{k=1}^{K}Rang(A_{k})=n \ \Rightarrow \ \forall i \neq j : \left(Q_{j} \
 **Remarque :** 
 
 $$x \sim \mathcal{N}(0\ ; \ \sigma^{2}I) \ \Rightarrow \ x^{T}x \sim \sigma^{2}\chi^{2}_{n}$$
+
 
 
 
