@@ -403,7 +403,8 @@ Propriétés :
 En appliquant le théorème de Cochrane au triangle $(y\hat{y}\bar{y})$, on obtient alors que : 
 
 $SSi \ \ \{\forall i \in p : \beta_{i}=0\}$
-$$SCT=\Sigma^{n}_{i=1}(y_{i}-\bar{y})^{2} \sim \sigma^{2} \ \chi^{2}_{n-1}$$
+
+$$SCT=\Sigma^{n}_{i=1} (y_{i}-\bar{y})^{2} \sim \sigma^{2} \ \chi^{2}_{n-1}$$
 
 $$SCE=y^{T}\left(H-\frac{11^{T}}{n}\right)y \sim \sigma^{2}\chi^{2}_{p}$$
 
@@ -623,6 +624,7 @@ $$\Sigma_{k=1}^{K}Rang(A_{k})=n \ \Rightarrow \ \forall i \neq j : \left(Q_{j} \
 **Remarque :** 
 
 $$x \sim \mathcal{N}(0\ ; \ \sigma^{2}I) \ \Rightarrow \ x^{T}x \sim \sigma^{2}\chi^{2}_{n}$$
+
 
 
 
