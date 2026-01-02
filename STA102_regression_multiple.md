@@ -500,7 +500,7 @@ Une autocorrélation ayant pour conséquence de réduire certaines qui, faibles 
 
 $$Tol(x_{p})=1-R^{2}_{p}$$
 
-Avec $R^{2}_{p}$ = coefficient de corrélation pour la régression d'une variable $x_{p}$ sur les autres variables prédictives.
+Avec $R^{2}_p$ = coefficient de corrélation pour la régression d'une variable $x_p$ sur les autres variables prédictives.
 
 Propriétés : 
 
@@ -623,6 +623,7 @@ $$\Sigma_{k=1}^{K}Rang(A_{k})=n \ \Rightarrow \ \forall i \neq j : \left(Q_{j} \
 **Remarque :** 
 
 $$x \sim \mathcal{N}(0\ ; \ \sigma^{2}I) \ \Rightarrow \ x^{T}x \sim \sigma^{2}\chi^{2}_{n}$$
+
 
 
 
