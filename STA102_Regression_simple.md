@@ -1,8 +1,5 @@
 ---
-title: "R Notebook"
-output:
-  html_document:
-    df_print: paged
+title: "STA102 : régression linéaire simple"
 ---
 
 Chargement du jeu de données :
@@ -563,3 +560,4 @@ ols_plot_dfbetas(modele)
 ols_plot_dffits(modele)
 ols_plot_resid_lev(modele)
 ```
+
