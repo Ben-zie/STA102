@@ -162,7 +162,7 @@ Et $V[ \ b \ ]$, la matrice de covariance de $b$ :
 $$V[ \ b \ ]=V[ \ Ay \ ]=A^{T} \ V[ \ y \ ] \ A=\sigma^{2}A \ A^{T}$$
 $$=\sigma^{2}(X^{T}X)^{-1}X^{T}X(X^{T}X)^{-1}=\sigma^{2}(X^{T}X)^{-1}$$
 
-Parmi tous les estimateurs lin´eaires non biais´es de β, b est l’estimateur de variance minimale (*théorème de Gaussi-Markov*).
+Parmi tous les estimateurs lin´eaires non biais´es de β, b est l’estimateur de variance minimale (*théorème de Gauss-Markov*).
 
 ## Matrices caractéristiques :
 
@@ -303,7 +303,8 @@ $$\Rightarrow \ \hat{\sigma}^{2}_{b_{j}}=\hat{\sigma}^{2}[\ (X^{T}X)^{-1}\ ]_{(j
 
 **Rappel :** $b=Ay$ 
 
-$B$ est donc lui aussi un vecteur gaussien, comme transformée linéaire d'un autre vecteur gaussien. On peut lui appliquer des tests statistiques : 
+$B$ est donc lui aussi un vecteur gaussien, comme transformée linéaire d'un autre vecteur gaussien. On peut lui appliquer des tests statistiques :
+
 $$\frac{B_{j}-\beta_{j}}{\hat{\sigma}[\ (X^{T}X)^{-1/2}\ ]_{(j+1,j+1)}}\sim \mathcal{N}(0,1) \ ; \ j=0,...,p$$
 
 ### La régression comme projection orthogonale :
@@ -622,6 +623,7 @@ $$\Sigma_{k=1}^{K}Rang(A_{k})=n \ \Rightarrow \ \forall i \neq j : \left(Q_{j} \
 **Remarque :** 
 
 $$x \sim \mathcal{N}(0\ ; \ \sigma^{2}I) \ \Rightarrow \ x^{T}x \sim \sigma^{2}\chi^{2}_{n}$$
+
 
 
 
