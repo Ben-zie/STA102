@@ -499,7 +499,7 @@ $$\delta_{i}=\sum^{n}_{i=1}\frac{(x_{i}-\bar{x})}{\sum^{n}_{i=1}(x_{i}-\bar{x})^
 
 - Absence de **biais** : 
 
-$$E[\ B \ ]=E\left[\  \frac{\sum^{n}_{i=1} (Y_{i}-\bar{Y})(x_{i}-\bar{x})}{\sum^{n}_{i=1}(x_{i}-\bar{x})^{2}} \ \right]=  \frac{\sum^{n}_{i=1} E\left[\ Y_{i}-\bar{Y} \ \right](x_{i}-\bar{x})}{\sum^{n}_{i=1}(x_{i}-\bar{x})^{2}}$$
+$$E[\ B \ ]=E\left[\ \frac{\sum_{i=1}^{n} (Y_{i}-\bar{Y})(x_{i}-\bar{x})}{\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}} \quad \right]=  \frac{\sum^{n}_{i=1} E\left[\ Y_{i}-\bar{Y} \quad \right](x_{i}-\bar{x})}{\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}}$$
 
 On sait que :
 
@@ -921,6 +921,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
