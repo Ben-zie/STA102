@@ -743,7 +743,7 @@ $$
 
 $$(Y_{0}-\hat{Y}_{0}) \sim \mathcal{N}(0 \ ; \sigma\sqrt{1+h_{0}})$$
 
-On stadardise et on utilise l'estimateur de $\sigma^{2}$ :
+On standardise et on utilise l'estimateur de $\sigma^{2}$ :
 
 $$\frac{Y_{0}-\hat{Y}^{*}_{0}}{S_{n-2}\sqrt{1+h_{0}}} \sim \mathcal{T}_{n-2}$$
 
@@ -926,6 +926,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
