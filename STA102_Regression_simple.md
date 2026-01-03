@@ -747,7 +747,7 @@ On standardise et on utilise l'estimateur de $\sigma^{2}$ :
 
 $$\frac{Y_{0}-\hat{Y}^{*}_{0}}{S_{n-2}\sqrt{1+h_{0}}} \sim \mathcal{T}_{n-2}$$
 
-$$IC_{1-\gamma} \ (Y_{0}-\hat{Y}^{*}_{0})=IC_{1-\gamma} \ [\ Y|x_{0}\ ]=\left[\ \hat{Y}^{*}_{0}-\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}} \ ; \ \hat{Y}^{*}_{0}+\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}}\ \right]$$
+$$IC_{1-\gamma} \ (Y_{0}-\hat{Y}^{*}_{0})=IC_{1-\gamma} \ [\ Y|x_{0}\ ]=\left[\ \hat{Y}_{0}^{*}-\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}} \ ; \ \hat{Y}_{0}^{*}+\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}}\ \right]$$
 
 Remarque : On trouve la même tendance qu'avec l'intervalle de confiance de la droite, avec un élargissement proportionnel à l'éloignement vis à vis de $\bar{x}$.
 
@@ -926,6 +926,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
