@@ -109,9 +109,11 @@ $$b= \frac{\Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y})}{\Sigma^{n}_{i=1}x_{i}^{2}-n\bar
 Avec :
 
 $$
-x_{i}=x_{i}+\bar{x}-\bar{x} \ \Rightarrow \ 
-\sum_{i=1}^n x_i (y_i-\bar{y})
-= \sum_{i=1}^n \left[(x_i-\bar{x})+\bar{x}\right](y_i-\bar{y})
+x_i = (x_i - \bar{x}) + \bar{x}
+\quad \Rightarrow \quad
+\sum_{i=1}^n x_i (y_i - \bar{y})
+=
+\sum_{i=1}^n \big[(x_i - \bar{x}) + \bar{x}\big](y_i - \bar{y})
 $$
 
 $$
@@ -926,6 +928,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
