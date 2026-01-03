@@ -127,18 +127,12 @@ $$
 
 $$
 (x_i-\bar{x})^2 = x_i^2 - 2\bar x x_i + \bar{x}^2
-\ \Rightarrow \ 
-\sum_{i=1}^n (x_i-\bar{x})^2
-= \sum_{i=1}^n x_i^2
-- 2\bar{x} \sum_{i=1}^n x_i
-+ n\bar{x}^2
+\quad \Rightarrow \quad \sum_{i=1}^n (x_i-\bar{x})^2
+= \sum_{i=1}^n x_i^2-2\bar{x} \sum_{i=1}^n x_i+n\bar{x}^2
 $$
 
 $$
-\sum_{i=1}^n x_i = n\bar x
-\ \Rightarrow \ 
-\sum_{i=1}^n (x_i-\bar x)^2
-= \sum_{i=1}^n x_i^2 - n\bar x^2
+\sum_{i=1}^n x_i = n\bar x\quad \Rightarrow \quad \sum_{i=1}^n (x_i-\bar x)^2=\sum_{i=1}^n x_i^2 - n\bar x^2
 $$
 
 Donc :
@@ -927,6 +921,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
