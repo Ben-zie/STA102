@@ -555,19 +555,24 @@ $$f(Y_{i})=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{(Y_{i}-\alpha-\beta x_{i})^{
 Avec la fonction de vraissemblance : 
 
 $$L(\alpha, \beta,\sigma^{2}, Y_{1},...,Y_{n})=
-\prod_{i=1}^{n} \frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{(Y_{i}-\alpha-\beta x_{i})^{2}}{2\sigma^{2}}} \\
-L(\alpha, \beta,\sigma^{2}, Y_{1},...,Y_{n})=
-\left(\frac{1}{\sqrt{2\pi\sigma^{2}}}\right)^{n}e^{-\frac{1}{2\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2}} \\
-\mathcal{l}(\alpha, \beta,\sigma^{2}, Y_{1},...,Y_{n})=-ln((2\pi\sigma^{2})^{\frac{n}{2}})-\frac{1}{2\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2} \\
-\mathcal{l}(\alpha, \beta,\sigma^{2}, Y_{1},...,Y_{n})=-\frac{n}{2}ln(2\pi)-\frac{n}{2}ln(\sigma^{2})-\frac{1}{2\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2} \\
+\prod_{i=1}^{n} \frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{(Y_{i}-\alpha-\beta x_{i})^{2}}{2\sigma^{2}}}$$
+
+$$L(\alpha, \beta,\sigma^{2}, Y_{1},...,Y_{n})=
+\left(\frac{1}{\sqrt{2\pi\sigma^{2}}}\right)^{n}e^{-\frac{1}{2\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2}}$$
+
+$$\mathcal{l}(\alpha, \beta,\sigma^{2}, Y_{1},...,Y_{n})=-ln((2\pi\sigma^{2})^{\frac{n}{2}})-\frac{1}{2\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2}$$
+
+$$\mathcal{l}(\alpha, \beta,\sigma^{2}, Y_{1},...,Y_{n})=-\frac{n}{2}ln(2\pi)-\frac{n}{2}ln(\sigma^{2})-\frac{1}{2\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2} \\
 $$
 
 On recherche un extrêmum :
 
 $$
-\frac{\partial ln(L)}{\partial \alpha}=\frac{1}{\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i}) \\
-\frac{\partial ln(L)}{\partial \beta}=\frac{1}{\sigma^{2}}\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2}) \\
-\frac{\partial ln(L)}{\partial \sigma^{2}}=-\frac{n}{2\sigma^{2}}-\frac{1}{2\sigma^{4}}\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2}) \\
+\frac{\partial ln(L)}{\partial \alpha}=\frac{1}{\sigma^{2}}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})$$
+
+$$\frac{\partial ln(L)}{\partial \beta}=\frac{1}{\sigma^{2}}\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2})$$
+
+$$\frac{\partial ln(L)}{\partial \sigma^{2}}=-\frac{n}{2\sigma^{2}}-\frac{1}{2\sigma^{4}}\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2})
 $$
 
 Donc :
@@ -934,4 +939,5 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
