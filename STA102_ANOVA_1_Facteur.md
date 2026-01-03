@@ -87,9 +87,9 @@ Forme  matricielle :
 
 $$
 Y =
-\begin{pmatrix}
+\begin{matrix}
 Y_{11} \\ \vdots \\ Y_{1 n_1} \\ Y_{21} \\ \vdots \\ Y_{2 n_2} \\ \vdots \\ Y_{k1} \\ \vdots \\ Y_{k n_k}
-\end{pmatrix}
+\end{matrix}
 \quad
 X =
 \begin{pmatrix}
@@ -106,7 +106,7 @@ X =
 \end{pmatrix}
 \quad
 \beta =
-\begin{matrix}
+\begin{pmatrix}
 \mu_1 \\ \mu_2 \\ \vdots \\ \mu_k
 \end{pmatrix}
 \quad
