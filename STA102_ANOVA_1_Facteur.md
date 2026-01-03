@@ -19,7 +19,7 @@ Soit $K$ échantillons de taille $\{n_{1},...,n_{k}\}$ (cf. partition de la popu
 
 - La moyenne de $Y$ pour le groupe $i$ : $Y_{i.}=\frac{1}{n_{i}}\sum_{j=1}^{n_{i}}y_{ij}$
 
-- La moyenne de $Y$ pour l'ensemble des observations : $Y_{..}=\frac{1}{n}\sum^{K}_{i=1}\sum^{n_{i}}_{j=1}y_{ij}$
+- La moyenne de $Y$ pour l'ensemble des observations : $Y_{..}=\frac{1}{n}\sum_{i=1}^{K}\sum_{j=1}^{n_{i}}y_{ij}$
 
 ### Modélisation : 
 
