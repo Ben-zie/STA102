@@ -297,6 +297,7 @@ predict(modele,interval="confidence",level=0.95)
 $$
 R^{2}=\frac{SCE}{SCT}=\frac{\sum^{n}_{i=1}(\hat{y}_{i}-\bar{y}_{i})^{2}}{\sum^{n}_{i=1}(y_{i}-\hat{y}_{i})^{2}}
 $$
+
 Propriétés : 
 
 - $R^{2}\in [\ 0 \ ; \ 1\ ]$
@@ -926,6 +927,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
