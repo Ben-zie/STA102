@@ -63,7 +63,7 @@ Propriétés :
 
 **Attention :**
 
-- $ X \perp Y \Rightarrow r=0 \ $
+- $X \perp Y \Rightarrow r=0$
 
 - $r=0 \ \nRightarrow X \perp Y$
 
@@ -925,6 +925,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
