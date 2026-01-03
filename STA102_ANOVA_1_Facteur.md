@@ -106,7 +106,7 @@ X =
 \end{pmatrix}
 \quad
 \beta =
-\begin{pmatrix}
+\begin{matrix}
 \mu_1 \\ \mu_2 \\ \vdots \\ \mu_k
 \end{pmatrix}
 \quad
