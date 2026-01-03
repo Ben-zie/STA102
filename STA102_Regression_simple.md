@@ -73,19 +73,19 @@ $$e_{i}=y_{i}-\hat{y_{i}}$$
 
 Avec :
 
-$$Min(\Sigma^{n}_{i=1}y_{i}-\hat{y_{i}})^{2}$$
+$$Min(\Sigma_{i=1}^{n}y_{i}-\hat{y_{i}})^{2}$$
 
 ### Détermination des coefficients : 
 
 Soit : 
 
-$F(a;b)=(\Sigma^{n}_{i=1}y_{i}-a -bx^{2}_{i})$
+$F(a;b)=(\Sigma_{i=1}^{n}y_{i}-a -bx_{i}^{2})$
 
-$$\frac{\partial \ F(a;b)}{\partial \ a}=2\Sigma^{n}_{i=1}(y_{i}-a -bx_{i})=0$$
-$$\Rightarrow \ \Sigma^{n}_{i=1}e_{i}=0$$
+$$\frac{\partial \ F(a;b)}{\partial \ a}=2\Sigma_{i=1}^{n}(y_{i}-a -bx_{i})=0$$
+$$\Rightarrow \ \Sigma_{i=1}^{n}e_{i}=0$$
 
-$$\frac{\partial \ F(a;b)}{\partial \ b}=2\Sigma^{n}_{i=1}x_{i}(y_{i}-a -bx_{i})=0$$
-$$\Rightarrow \ \Sigma^{n}_{i=1}x_{i}e_{i}=0$$
+$$\frac{\partial \ F(a;b)}{\partial \ b}=2\Sigma_{i=1}^{n}x_{i}(y_{i}-a -bx_{i})=0$$
+$$\Rightarrow \ \Sigma_{i=1}^{n}x_{i}e_{i}=0$$
 
 Donc : 
 
@@ -94,7 +94,7 @@ Donc :
 
 Résolution : 
 
-$$\Sigma^{n}_{i=1}(y_{i}-a -bx_{i})=\Sigma^{n}_{i=1}y_{i} -na -\Sigma^{n}_{i=1}bx_{i}=0$$
+$$\Sigma_{i=1}^{n}(y_{i}-a -bx_{i})=\Sigma_{i=1}^{n}y_{i} -na -\Sigma^{n}_{i=1}bx_{i}=0$$
 $$\Rightarrow \ \frac{\Sigma^{n}_{i=1}y_{i}}{n} -a -b\frac{\Sigma^{n}_{i=1}x_{i}}{n}= \bar{y}-a-b\bar{x}= 0$$
 $$\Rightarrow \ a=\bar{y}-b\bar{x}$$
 
@@ -926,6 +926,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
