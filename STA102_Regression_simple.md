@@ -577,11 +577,9 @@ $$
 
 Donc :
 
-$$
-\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i}) = 0 \quad \Rightarrow \quad A=\bar{Y}-B\bar{X} \\
-\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2}) = 0 \quad \Rightarrow \quad B= \frac{\sum^{n}_{i=1} (Y_{i}-\bar{Y})(x_{i}-\bar{x})}{\sum^{n}_{i=1}(x_{i}-\bar{x})^{2}} \\
--\frac{n}{2\sigma^{2}}-\frac{1}{2\sigma^{4}}\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2}) = 0 \quad \Rightarrow \quad S^{2}_{n}=\frac{1}{n}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2} 
-$$
+$$\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i}) = 0 \quad \Rightarrow \quad A=\bar{Y}-B\bar{X} $$
+$$\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2}) = 0 \quad \Rightarrow \quad B= \frac{\sum^{n}_{i=1} (Y_{i}-\bar{Y})(x_{i}-\bar{x})}{\sum^{n}_{i=1}(x_{i}-\bar{x})^{2}} $$
+$$-\frac{n}{2\sigma^{2}}-\frac{1}{2\sigma^{4}}\sum^{n}_{i=1}(Y_{i}x_{i}-\alpha x_{i}-\beta x_{i}^{2}) = 0 \quad \Rightarrow \quad S^{2}_{n}=\frac{1}{n}\sum^{n}_{i=1}(Y_{i}-\alpha-\beta x_{i})^{2} $$
 
 Remarque : 
 
@@ -649,10 +647,10 @@ $$
 
 Soit $t_{n-2 \ ; 1-\gamma/2}$ , le fractile d'ordre $(1-\gamma)$ d'une loi de Student à $(n-2)$ degrés de liberté : 
 
-$$P\left(\ -t_{n-2 \ ; 1-\gamma/2}\leq\frac{A-\alpha}{S_{A}}\leq t_{n-2 \ ; 1-\gamma/2}\right)=1-\gamma\\
-P\left(\ -t_{n-2 \ ; 1-\gamma/2}\times S_{A}\leq A-\alpha\leq t_{n-2 \ ; 1-\gamma/2}\times S_{A}\right)=1-\gamma\\
-P\left(\ -A -t_{n-2 \ ; 1-\gamma/2}\times S_{A}\leq -\alpha\leq -A +t_{n-2 \ ; 1-\gamma/2}\times S_{A}\right)=1-\gamma\\
-P\left(\ A -t_{n-2 \ ; 1-\gamma/2}\times S_{A}\leq \alpha\leq A +t_{n-2 \ ; 1-\gamma/2}\times S_{A}\right)=1-\gamma\\
+$$P\left(\ -t_{n-2 \ ; 1-\gamma/2}\leq\frac{A-\alpha}{S_{A}}\leq t_{n-2 \ ; 1-\gamma/2}\right)=1-\gamma$$
+$$P\left(\ -t_{n-2 \ ; 1-\gamma/2}\times S_{A}\leq A-\alpha\leq t_{n-2 \ ; 1-\gamma/2}\times S_{A}\right)=1-\gamma$$
+$$P\left(\ -A -t_{n-2 \ ; 1-\gamma/2}\times S_{A}\leq -\alpha\leq -A +t_{n-2 \ ; 1-\gamma/2}\times S_{A}\right)=1-\gamma$$
+$$P\left(\ A -t_{n-2 \ ; 1-\gamma/2}\times S_{A}\leq \alpha\leq A +t_{n-2 \ ; 1-\gamma/2}\times S_{A}\right)=1-\gamma
 $$
 
 Donc : 
@@ -663,11 +661,10 @@ $$
 
 et : 
 
-$$P\left(\ -t_{n-2 \ ; 1-\gamma/2}\leq\frac{B-\beta}{S_{B}}\leq t_{n-2 \ ; 1-\gamma/2}\right)=1-\gamma\\
-P\left(\ B -t_{n-2 \ ; 1-\gamma/2}\times S_{B}\leq \beta\leq B +t_{n-2 \ ; 1-\gamma/2}\times S_{B}\right)=1-\gamma\\
-\quad\\
-\quad\\
-IC_{n-2 \ ; \ (1-\gamma/2)}=\left[B -t_{n-2 \ ; 1-\gamma/2}\times \hat{\sigma}_{B} \quad ; \quad B +t_{n-2 \ ; 1-\gamma/2}\times \hat{\sigma}_{B} \right]
+$$P\left(\ -t_{n-2 \ ; 1-\gamma/2}\leq\frac{B-\beta}{S_{B}}\leq t_{n-2 \ ; 1-\gamma/2}\right)=1-\gamma$$
+$$P\left(\ B -t_{n-2 \ ; 1-\gamma/2}\times S_{B}\leq \beta\leq B +t_{n-2 \ ; 1-\gamma/2}\times S_{B}\right)=1-\gamma$$
+
+$$IC_{n-2 \ ; \ (1-\gamma/2)}=\left[B -t_{n-2 \ ; 1-\gamma/2}\times \hat{\sigma}_{B} \quad ; \quad B +t_{n-2 \ ; 1-\gamma/2}\times \hat{\sigma}_{B} \right]
 $$
 
 #### Détermination d'Intervalles de confiance pour la droite de régression :
@@ -677,14 +674,11 @@ dont l'estimateur est : $A+Bx_{i}$
 
 On a :
 
-$$
-E[\ A+Bx_{i}\ ]=E[\ A\ ]+E[\ B\ ]x_{i}=\alpha+\beta x_{i}\\
-\quad\\
-\quad\\
-V[\ A+Bx_{i}\ ]=V[\ A\ ]+V[\ B\ ]x_{i}^{2}+2x_{i}\ Cov(A\ ;B)\\
-=\sigma^{2}\left[\frac{1}{n}+\frac{\bar{x}^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]+x_{i}^{2}\frac{\sigma^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}-2x_{i}\frac{\bar{x}\sigma^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\\
-=\sigma^{2}\left[\frac{1}{n}+\frac{(x_{i}-\bar{x})^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]=\sigma^{2}h_{i}\\
-$$
+$$E[\ A+Bx_{i}\ ]=E[\ A\ ]+E[\ B\ ]x_{i}=\alpha+\beta x_{i$$
+
+$$V[\ A+Bx_{i}\ ]=V[\ A\ ]+V[\ B\ ]x_{i}^{2}+2x_{i}\ Cov(A\ ;B$$
+$$=\sigma^{2}\left[\frac{1}{n}+\frac{\bar{x}^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]+x_{i}^{2}\frac{\sigma^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}-2x_{i}\frac{\bar{x}\sigma^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2$$
+$$=\sigma^{2}\left[\frac{1}{n}+\frac{(x_{i}-\bar{x})^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]=\sigma^{2}h_{i$$
 
 La quantité $A+B x_{i}$ pouvant être exprimée comme une **combinaison linéaire de variables aléatoires gaussiènnes**, elle suit une loi normale : 
 
@@ -744,21 +738,16 @@ On remarque qu'alors que $Y_{0}$ ne dépend que de $x_{0}$, la valeur de $\hat{Y
 Donc : 
 
 $$
-V[\ (Y-\hat{Y})\ ]=V[\ Y \ ]-V[\ \hat{Y}\ ]+2 \ Cov(Y\ ; \ \hat{Y})=V[\ Y \ ]-V[\ \hat{Y}\ ]\\
-= \sigma^{2}+\sigma^{2}h_{0}=\sigma^{2}(1+h_{0})\\
-\quad\\
-(Y_{0}-\hat{Y}_{0}) \sim \mathcal{N}(0 \ ; \sigma\sqrt{1+h_{0}})
-$$
+V[\ (Y-\hat{Y})\ ]=V[\ Y \ ]-V[\ \hat{Y}\ ]+2 \ Cov(Y\ ; \ \hat{Y})=V[\ Y \ ]-V[\ \hat{Y}\ $$
+$$= \sigma^{2}+\sigma^{2}h_{0}=\sigma^{2}(1+h_{0$$
+
+$$(Y_{0}-\hat{Y}_{0}) \sim \mathcal{N}(0 \ ; \sigma\sqrt{1+h_{0}})$$
 
 On stadardise et on utilise l'estimateur de $\sigma^{2}$ :
 
-$$
-\frac{Y_{0}-\hat{Y}^{*}_{0}}{S_{n-2}\sqrt{1+h_{0}}} \sim \mathcal{T}_{n-2}
-\quad \\
-\quad \\
-IC_{1-\gamma} \ (Y_{0}-\hat{Y}^{*}_{0})=IC_{1-\gamma} \ [\ Y|x_{0}\ ]=\left[\ \hat{Y}^{*}_{0}-\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}} \ ; \ \hat{Y}^{*}_{0}+\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}}\ \right]
+$$\frac{Y_{0}-\hat{Y}^{*}_{0}}{S_{n-2}\sqrt{1+h_{0}}} \sim \mathcal{T}_{n-2}$$
 
-$$
+$$IC_{1-\gamma} \ (Y_{0}-\hat{Y}^{*}_{0})=IC_{1-\gamma} \ [\ Y|x_{0}\ ]=\left[\ \hat{Y}^{*}_{0}-\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}} \ ; \ \hat{Y}^{*}_{0}+\mathcal{T}_{n-2 \ ; \ (1-\gamma/2)} \times S_{n-2}\sqrt{1+h_{0}}\ \right]$$
 
 Remarque : On trouve la même tendance qu'avec l'intervalle de confiance de la droite, avec un élargissement proportionnel à l'éloignement vis à vis de $\bar{x}$.
 
@@ -839,12 +828,10 @@ Ce test s'accompange généralement d'un **tableau d'analyse de variance** :
 
 Propriétés des résidus aléatoires : 
 
-$$
-V[\ E_{i}\ ]=V[\ Y_{i}-[A+Bx_{i}]\ ]=V[\ Y_{i}\ ]+V[\ (A+Bx_{i})\ ]+ 2 \ Cov(Y_{i} \ ; A+Bx_{i}\ ) \\
-= V[\ Y_{i}\ ]+V[\ (A+Bx_{i})\ ]+ 2 \ V[\ \hat{Y_{i}} \ ] = \sigma^{2}+\sigma^{2}h_{i}-2\sigma^{2}h_{i}\\
-\quad \\
-\sigma^{2}_{E_{i}}= (1-h_{i}) \ \sigma^{2}
-$$
+$$V[\ E_{i}\ ]=V[\ Y_{i}-[A+Bx_{i}]\ ]=V[\ Y_{i}\ ]+V[\ (A+Bx_{i})\ ]+ 2 \ Cov(Y_{i} \ ; A+Bx_{i}\ )$$
+$$= V[\ Y_{i}\ ]+V[\ (A+Bx_{i})\ ]+ 2 \ V[\ \hat{Y_{i}} \ ] = \sigma^{2}+\sigma^{2}h_{i}-2\sigma^{2}h_{i$$
+
+$$\sigma^{2}_{E_{i}}= (1-h_{i}) \ \sigma^{2}$$
 
 #### Résidus normalisés : 
 
@@ -939,5 +926,6 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
