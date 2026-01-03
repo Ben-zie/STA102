@@ -674,9 +674,9 @@ dont l'estimateur est : $A+Bx_{i}$
 
 On a :
 
-$$E[\ A+Bx_{i}\ ]=E[\ A\ ]+E[\ B\ ]x_{i}=\alpha+\beta x_{i$$
+$$E[\ A+Bx_{i}\ ]=E[\ A\ ]+E[\ B\ ]x_{i}=\alpha+\beta x_{i}$$
 
-$$V[\ A+Bx_{i}\ ]=V[\ A\ ]+V[\ B\ ]x_{i}^{2}+2x_{i}\ Cov(A\ ;B)=\sigma^{2}\left[\frac{1}{n}+\frac{\bar{x}^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]+x_{i}^{2}\frac{\sigma^{2}}{\sum^{n}_{j=1}(x_{j}\bar{x})^{2}}-2x_{i}\frac{\bar{x}\sigma^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}=\sigma^{2}\left[\frac{1}{n}+\frac{(x_{i}-\bar{x})^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]=\sigma^{2}h_{i]$$
+$$V[\ A+Bx_{i}\ ]=V[\ A\ ]+V[\ B\ ]x_{i}^{2}+2x_{i}\ Cov(A\ ;B)=\sigma^{2}\left[\frac{1}{n}+\frac{\bar{x}^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]+x_{i}^{2}\frac{\sigma^{2}}{\sum^{n}_{j=1}(x_{j}\bar{x})^{2}}-2x_{i}\frac{\bar{x}\sigma^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}=\sigma^{2}\left[\frac{1}{n}+\frac{(x_{i}-\bar{x})^{2}}{\sum^{n}_{j=1}(x_{j}-\bar{x})^{2}}\right]=\sigma^{2}h_{i}$$
 
 La quantité $A+B x_{i}$ pouvant être exprimée comme une **combinaison linéaire de variables aléatoires gaussiènnes**, elle suit une loi normale : 
 
@@ -924,6 +924,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
