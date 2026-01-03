@@ -85,10 +85,10 @@ Soit :
 
 $F(a;b)=(\Sigma_{i=1}^{n}y_{i}-a -bx_{i})^{2}$
 
-$$\frac{\partial \ F(a;b)}{\partial \ a}=2\Sigma_{i=1}^{n}(y_{i}-a -bx_{i})=0$$
+$$\frac{\partial \ F(a;b)}{\partial \ a}=-2\Sigma_{i=1}^{n}(y_{i}-a -bx_{i})=0$$
 $$\Rightarrow \ \Sigma_{i=1}^{n}e_{i}=0$$
 
-$$\frac{\partial \ F(a;b)}{\partial \ b}=2\Sigma_{i=1}^{n}x_{i}(y_{i}-a -bx_{i})=0$$
+$$\frac{\partial \ F(a;b)}{\partial \ b}=-2\Sigma_{i=1}^{n}x_{i}(y_{i}-a -bx_{i})=0$$
 $$\Rightarrow \ \Sigma_{i=1}^{n}x_{i}e_{i}=0$$
 
 Donc : 
@@ -925,6 +925,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
