@@ -110,29 +110,29 @@ Avec :
 
 $$
 x_{i}=x_{i}+\bar{x}-\bar{x} \ \Rightarrow \ 
-\sum_{i=1}^n x_i (y_i-\bar y)
-= \sum_{i=1}^n \big[(x_i-\bar x)+\bar x\big](y_i-\bar y)
+\sum_{i=1}^n x_i (y_i-\bar{y})
+= \sum_{i=1}^n \left[(x_i-\bar{x})+\bar{x}\right](y_i-\bar{y})
 $$
 
 $$
-= \sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)
-+ \bar x \sum_{i=1}^n (y_i-\bar y)
+= \sum_{i=1}^n (x_{i}-\bar x)(y_{i}-\bar{y})
++ \bar x \sum_{i=1}^n (y_i-\bar{y})
 $$
 
 et :
 
 $$
-\sum_{i=1}^n (y_i-\bar y)=0 \ \Rightarrow \ \sum_{i=1}^n x_i (y_i-\bar y)
-= \sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)
+\sum_{i=1}^n (y_i-\bar{y})=0 \ \Rightarrow \ \sum_{i=1}^n x_{i} (y_{i}-\bar{y})
+= \sum_{i=1}^n (x_{i}-\bar{x})(y_{i}-\bar{y})
 $$
 
 $$
-(x_i-\bar x)^2 = x_i^2 - 2\bar x x_i + \bar x^2
+(x_i-\bar{x})^2 = x_i^2 - 2\bar x x_i + \bar{x}^2
 \ \Rightarrow \ 
-\sum_{i=1}^n (x_i-\bar x)^2
+\sum_{i=1}^n (x_i-\bar{x})^2
 = \sum_{i=1}^n x_i^2
-- 2\bar x \sum_{i=1}^n x_i
-+ n\bar x^2
+- 2\bar{x} \sum_{i=1}^n x_i
++ n\bar{x}^2
 $$
 
 $$
@@ -926,6 +926,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
