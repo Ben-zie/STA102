@@ -115,8 +115,7 @@ x_{i}=x_{i}+\bar{x}-\bar{x} \ \Rightarrow \
 $$
 
 $$
-= \sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)
-+ \bar x \sum_{i=1}^n (y_i-\bar y)
+= \sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)+ \bar x \sum_{i=1}^n (y_i-\bar y)
 $$
 
 et :
@@ -150,6 +149,7 @@ b= \frac{\sum_{i=1}^n x_i(y_i-\bar y)}
 = \frac{\sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)}
        {\sum_{i=1}^n (x_i-\bar x)^2}
 $$
+
 On fais le lien avec le coefficient de corrélation : 
 
 $$
@@ -926,6 +926,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
