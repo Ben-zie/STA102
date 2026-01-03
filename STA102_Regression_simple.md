@@ -738,8 +738,8 @@ On remarque qu'alors que $Y_{0}$ ne dépend que de $x_{0}$, la valeur de $\hat{Y
 Donc : 
 
 $$
-V[\ (Y-\hat{Y})\ ]=V[\ Y \ ]-V[\ \hat{Y}\ ]+2 \ Cov(Y\ ; \ \hat{Y})=V[\ Y \ ]-V[\ \hat{Y}\ $$
-$$= \sigma^{2}+\sigma^{2}h_{0}=\sigma^{2}(1+h_{0$$
+V[\ (Y-\hat{Y})\ ]=V[\ Y \ ]-V[\ \hat{Y}\ ]+2 \ Cov(Y\ ; \ \hat{Y})=V[\ Y \ ]-V[\ \hat{Y} = \sigma^{2}+\sigma^{2}h_{0}=\sigma^{2}(1+h_{0}
+$$
 
 $$(Y_{0}-\hat{Y}_{0}) \sim \mathcal{N}(0 \ ; \sigma\sqrt{1+h_{0}})$$
 
@@ -926,6 +926,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
