@@ -116,14 +116,14 @@ $$
 
 $$
 = \sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)
-+ \bar x \sum_{i=1}^n (y_i-\bar y)
++ \bar x \sum^n_{i=1} (y_i-\bar y)
 $$
 
 et :
 
 $$
 \sum_{i=1}^n (y_i-\bar y)=0 \ \Rightarrow \ \sum_{i=1}^n x_i (y_i-\bar y)
-= \sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)
+= \sum^n_{i=1} (x_i-\bar x)(y_i-\bar y)
 $$
 
 $$
@@ -926,6 +926,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
