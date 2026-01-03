@@ -24,13 +24,13 @@ df <- read.delim("D:/Etudes/2025_2026/STA102/Regression_simple/appartements.txt"
 
 Soit $Y$ une variable **quantitative** (à expliquer) et $X$ une variable explicative :
 
-$Y=\{y_{1},...,y_{i}...,y_{n}\}$
+$Y= \{ y_{1},...,y_{i}...,y_{n} \} $
 
-$X=\{x_{1},...,x_{i}...,x_{n}\}$
+$X= \{ x_{1},...,x_{i}...,x_{n} \} $
 
 Et le vecteur d'observations composé des couples :
 
-$(x_{i} \ ; \ y_{i})$
+$(x_{i} \ ; \ y_{i}) \quad ; \quad i\in [1\ ;\ n]$
 
 ### Modèle de régression simple : 
 
@@ -923,6 +923,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
