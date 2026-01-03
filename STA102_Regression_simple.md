@@ -83,7 +83,7 @@ $$Min(\Sigma_{i=1}^{n}y_{i}-\hat{y_{i}})^{2}$$
 
 Soit : 
 
-$F(a;b)=(\Sigma_{i=1}^{n}y_{i}-a -bx_{i}^{2})$
+$F(a;b)=(\Sigma_{i=1}^{n}y_{i}-a -bx_{i})^{2}$
 
 $$\frac{\partial \ F(a;b)}{\partial \ a}=2\Sigma_{i=1}^{n}(y_{i}-a -bx_{i})=0$$
 $$\Rightarrow \ \Sigma_{i=1}^{n}e_{i}=0$$
@@ -925,6 +925,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
