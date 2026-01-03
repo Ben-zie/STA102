@@ -499,11 +499,11 @@ $$\delta_{i}=\sum^{n}_{i=1}\frac{(x_{i}-\bar{x})}{\sum^{n}_{i=1}(x_{i}-\bar{x})^
 
 - Absence de **biais** : 
 
-$$E[\ B \ ]=E\left[\ \frac{\sum_{i=1}^{n} (Y_{i}-\bar{Y})(x_{i}-\bar{x})}{\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}} \quad \right]=  \frac{\sum^{n}_{i=1} E\left[\ Y_{i}-\bar{Y} \quad \right](x_{i}-\bar{x})}{\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}}$$
+$$E[\ B \]=E[\frac{\sum_{i=1}^{n} (Y_i-\bar Y)(x_i-\bar x)}{\sum_{i=1}^{n}(x_i-\bar x)^{2}}\]=  \frac{\sum^{n}_{i=1} E[Y_{i}-\bar Y](x_{i}-\bar x )}{\sum_{i=1}^{n}(x_{i}-\bar{x})^{2}}$$
 
 On sait que :
 
-$$E[\ Y_{i} \ ]=E[\ \alpha+\beta x_{i}+\epsilon_{i} \ ]=\alpha+\beta x_{i}$$
+$$E[\ Y_{i} \]=E[\ \alpha+\beta x_{i}+\epsilon_{i} \]=\alpha+\beta x_{i}$$
 
 $$E[\ \bar{Y} \ ]=\frac{1}{n}\Sigma_{i}E[\ Y_{i} \ ]=\frac{1}{n}\Sigma_{i}(\alpha+\beta x_{i})=\alpha+\beta \bar{x}$$
 
@@ -921,6 +921,7 @@ modele_df = as.data.frame(cbind(
   predict(modele, interval = "confidence", level = 0.95)
 ))
 ```
+
 
 
 
