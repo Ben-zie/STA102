@@ -87,9 +87,18 @@ Forme  matricielle :
 
 $$
 Y =
-\begin{matrix}
-Y_{11} \\ \vdots \\ Y_{1 n_1} \\ Y_{21} \\ \vdots \\ Y_{2 n_2} \\ \vdots \\ Y_{k1} \\ \vdots \\ Y_{k n_k}
-\end{matrix}
+\begin{pmatrix}
+Y_{11} \\ 
+\vdots \\ 
+Y_{1 n_1} \\ 
+Y_{21} \\ 
+\vdots \\ 
+Y_{2 n_2} \\ 
+\vdots \\ 
+Y_{k1} \\ 
+\vdots \\ 
+Y_{k n_k}
+\end{pmatrix}
 \quad
 X =
 \begin{pmatrix}
@@ -112,7 +121,16 @@ X =
 \quad
 \varepsilon =
 \begin{pmatrix}
-\varepsilon_{11} \\ \vdots \\ \varepsilon_{1 n_1} \\ \varepsilon_{21} \\ \vdots \\ \varepsilon_{2 n_2} \\ \vdots \\ \varepsilon_{k1} \\ \vdots \\ \varepsilon_{k n_k}
+\varepsilon_{11} \\ 
+\vdots \\ 
+\varepsilon_{1 n_1} \\ 
+\varepsilon_{21} \\ 
+\vdots \\ 
+\varepsilon_{2 n_2} \\ 
+\vdots \\ 
+\varepsilon_{k1} \\ 
+\vdots \\ 
+\varepsilon_{k n_k}
 \end{pmatrix}
 $$
 
@@ -179,7 +197,16 @@ $$
 $$
 Y =
 \begin{pmatrix}
-Y_{11} \\ \vdots \\ Y_{1 n_1} \\ Y_{21} \\ \vdots \\ Y_{2 n_2} \\ \vdots \\ Y_{k1} \\ \vdots \\ Y_{k n_k}
+Y_{11} \\ 
+\vdots \\ 
+Y_{1 n_1} \\ 
+Y_{21} \\ 
+\vdots \\ 
+Y_{2 n_2} \\ 
+\vdots \\ 
+Y_{k1} \\ 
+\vdots \\ 
+Y_{k n_k}
 \end{pmatrix}
 \quad
 X =
@@ -203,7 +230,16 @@ X =
 \quad
 \varepsilon =
 \begin{pmatrix}
-\varepsilon_{11} \\ \vdots \\ \varepsilon_{1 n_1} \\ \varepsilon_{21} \\ \vdots \\ \varepsilon_{2 n_2} \\ \vdots \\ \varepsilon_{k1} \\ \vdots \\ \varepsilon_{k n_k}
+\varepsilon_{11} \\ 
+\vdots \\ 
+\varepsilon_{1 n_1} \\ 
+\varepsilon_{21} \\ 
+\vdots \\ 
+\varepsilon_{2 n_2} \\ 
+\vdots \\ 
+\varepsilon_{k1} \\ 
+\vdots \\ 
+\varepsilon_{k n_k}
 \end{pmatrix}
 $$
 
