@@ -116,7 +116,10 @@ X =
 \quad
 \beta =
 \begin{pmatrix}
-\mu_1 \\ \mu_2 \\ \vdots \\ \mu_k
+\mu_1 \\ 
+\mu_2 \\ 
+\vdots \\ 
+\mu_k
 \end{pmatrix}
 \quad
 \varepsilon =
@@ -225,7 +228,11 @@ X =
 \quad
 \beta =
 \begin{pmatrix}
-\mu \\ \alpha_1 \\ \alpha_2 \\ \vdots \\ \alpha_k
+\mu \\ 
+\alpha_1 \\ 
+\alpha_2 \\ 
+\vdots \\ 
+\alpha_k
 \end{pmatrix}
 \quad
 \varepsilon =
