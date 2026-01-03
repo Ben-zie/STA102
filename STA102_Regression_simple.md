@@ -109,16 +109,14 @@ $$b= \frac{\Sigma^{n}_{i=1}x_{i}(y_{i}-\bar{y})}{\Sigma^{n}_{i=1}x_{i}^{2}-n\bar
 Avec :
 
 $$
-x_i = (x_i - \bar{x}) + \bar{x}
-\quad \Rightarrow \quad
-\sum_{i=1}^n x_i (y_i - \bar{y})
-=
-\sum_{i=1}^n \big[(x_i - \bar{x}) + \bar{x}\big](y_i - \bar{y})
+x_{i}=x_{i}+\bar{x}-\bar{x} \ \Rightarrow \ 
+\sum_{i=1}^n x_i (y_i-\bar y)
+= \sum_{i=1}^n [(x_i-\bar x)+\bar x](y_i-\bar y)
 $$
 
 $$
-= \sum_{i=1}^n (x_{i}-\bar x)(y_{i}-\bar{y})
-+ \bar x \sum_{i=1}^n (y_i-\bar{y})
+= \sum_{i=1}^n (x_i-\bar x)(y_i-\bar y)
++ \bar x \sum_{i=1}^n (y_i-\bar y)
 $$
 
 et :
